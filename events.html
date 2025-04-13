@@ -1,0 +1,100 @@
+<!-- EVENTS PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Events | EcoSchool Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Header -->
+  <header class="bg-gray-950 shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-green-400">EcoSchool</div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-green-400">Home</a>
+        <a href="about.html" class="hover:text-green-400">About</a>
+        <a href="initiatives.html" class="hover:text-green-400">Initiatives</a>
+        <a href="get-involved.html" class="hover:text-green-400">Get Involved</a>
+        <a href="events.html" class="text-green-400 font-semibold">Events</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2">
+      <a href="index.html" class="block hover:text-green-400">Home</a>
+      <a href="about.html" class="block hover:text-green-400">About</a>
+      <a href="initiatives.html" class="block hover:text-green-400">Initiatives</a>
+      <a href="get-involved.html" class="block hover:text-green-400">Get Involved</a>
+      <a href="events.html" class="block text-green-400 font-semibold">Events</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold text-green-400 mb-10">Events</h1>
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-green-300 mb-4">Upcoming Events</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold text-white">Campus Clean-Up Drive</h3>
+          <p class="text-gray-400">April 15, 2025 – Help us make the school grounds spotless.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold text-white">Sustainability Workshop</h3>
+          <p class="text-gray-400">April 22, 2025 – Learn about reducing waste and saving energy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-3xl font-bold text-green-300 mb-4">Past Events & Achievements</h2>
+      <div class="space-y-6">
+        <div class="bg-gray-800 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold">Tree Planting Day</h3>
+          <p class="text-gray-400">We planted over 100 trees in our schoolyard and nearby areas.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold">Plastic-Free Week</h3>
+          <p class="text-gray-400">Students avoided single-use plastics for a full week, reducing waste significantly.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 py-8">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <div class="mb-4 space-x-4">
+        <a href="index.html" class="hover:text-green-400">Home</a>
+        <a href="about.html" class="hover:text-green-400">About</a>
+        <a href="initiatives.html" class="hover:text-green-400">Initiatives</a>
+        <a href="get-involved.html" class="hover:text-green-400">Get Involved</a>
+        <a href="events.html" class="text-green-400 font-semibold">Events</a>
+      </div>
+      <p class="text-sm text-gray-400">&copy; 2025 EcoSchool. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
