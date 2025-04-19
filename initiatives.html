@@ -1,83 +1,129 @@
-<!-- INITIATIVES PAGE -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <title>Initiatives | EcoSchool Project</title>
+  <title>Greener Future Project</title>
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- TailwindCSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
   <style>
     body {
       font-family: 'Inter', sans-serif;
     }
+    /* Extra custom styles for extra polish */
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease-in-out;
+    }
+    .text-accent {
+      color: #725C42;
+    }
   </style>
 </head>
-<body class="bg-gray-900 text-white">
+<body class="bg-[#EBE5D5] text-[#036517]">
+
   <!-- Header -->
-  <header class="bg-gray-950 shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="text-2xl font-bold text-green-400">EcoSchool</div>
-      <nav class="hidden md:flex space-x-6">
-        <a href="index.html" class="hover:text-green-400">Home</a>
-        <a href="about.html" class="hover:text-green-400">About</a>
-        <a href="initiatives.html" class="text-green-400 font-semibold">Initiatives</a>
-        <a href="get-involved.html" class="hover:text-green-400">Get Involved</a>
-        <a href="events.html" class="hover:text-green-400">Events</a>
+  <header class="bg-[#FFFFFF] shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="greenspark-logo.png" alt="Greenspark Logo" class="h-20 w-auto">
+      </a>
+      <nav class="space-x-6 text-[#026414] font-semibold hidden md:flex">
+        <a href="index.html" class="hover:text-[#EE7F9A] transition">Home</a>
+        <a href="about.html" class="hover:text-[#EE7F9A] transition">About</a>
+        <a href="initiatives.html" class="hover:text-[#EE7F9A] transition">Initiatives</a>
+        <a href="get-involved.html" class="hover:text-[#EE7F9A] transition">Get Involved</a>
+        <a href="events.html" class="hover:text-[#EE7F9A] transition">Events</a>
       </nav>
       <button id="menuBtn" class="md:hidden">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <svg class="w-6 h-6 text-[#036517]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
-    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2">
-      <a href="index.html" class="block hover:text-green-400">Home</a>
-      <a href="about.html" class="block hover:text-green-400">About</a>
-      <a href="initiatives.html" class="block text-green-400 font-semibold">Initiatives</a>
-      <a href="get-involved.html" class="block hover:text-green-400">Get Involved</a>
-      <a href="events.html" class="block hover:text-green-400">Events</a>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2 bg-[#FFFFFF] shadow-md">
+      <a href="index.html" class="block hover:text-[#036517]">Home</a>
+      <a href="about.html" class="block hover:text-[#036517]">About</a>
+      <a href="initiatives.html" class="block hover:text-[#036517]">Initiatives</a>
+      <a href="get-involved.html" class="block hover:text-[#036517]">Get Involved</a>
+      <a href="events.html" class="block hover:text-[#036517]">Events</a>
     </div>
   </header>
 
   <!-- Main Content -->
   <main class="max-w-6xl mx-auto px-4 py-16">
-    <h1 class="text-4xl font-bold text-green-400 mb-10">Our Initiatives</h1>
+    <h1 class="text-4xl font-bold text-accent mb-4">Our Initiatives</h1>
 
     <section class="mb-16">
-      <h2 class="text-3xl font-bold text-green-300 mb-4">Recycling & Waste Reduction</h2>
-      <p class="text-lg text-gray-300 mb-3">We provide recycling bins around campus and run composting programs to reduce landfill waste.</p>
-      <p class="text-gray-400">Progress: <span class="font-semibold text-white">500 kg of paper recycled so far</span></p>
-    </section>
-
-    <section class="mb-16">
-      <h2 class="text-3xl font-bold text-green-300 mb-4">Energy & Water Conservation</h2>
-      <p class="text-lg text-gray-300">We’ve installed motion-sensor lighting and encourage efficient water use through awareness campaigns.</p>
+      <h2 class="text-3xl font-bold text-dark-green-300 mb-4">Solar Charging Stations for Phones</h2>
+      <p class="text-lg leading-relaxed mb-10 text-[#333333]">Installing solar-powered phone charging stations in public places is a smart, eco-friendly, and practical project. These small stations use solar panels to allow people to charge their phones for free using clean energy. They can be placed in parks, schoolyards, university campuses, or public squares. Besides being a useful service, the stations act as educational tools—each one can display information about solar energy, its benefits, and simple eco-friendly habits. This project encourages the use of renewable energy while visibly promoting your group’s environmental commitment to the wider community.</p>
     </section>
 
     <section class="mb-16">
-      <h2 class="text-3xl font-bold text-green-300 mb-4">Green Spaces & Biodiversity</h2>
-      <p class="text-lg text-gray-300">Our students lead tree-planting activities, maintain gardens, and track plant and insect diversity on campus.</p>
+      <h2 class="text-3xl font-bold text-dark-green-300 mb-4"> Waste Sorting and Recycling in Schools</h2>
+      <p class="text-lg leading-relaxed mb-10 text-[#333333]">Implementing a proper waste sorting and recycling system in schools is an educational project with a long-term impact. It begins with an analysis of the types of waste produced—paper, plastic, organic, etc.—followed by the installation of clearly labeled recycling bins throughout the school. The success of the project depends on raising awareness among students, teachers, and staff through posters, classroom presentations, and fun activities. Creative recycling workshops can be organized to turn waste into useful or artistic items. Collaborations with local authorities or recycling companies can help with regular collection. This initiative teaches young people about responsible consumption and helps reduce waste in educational settings.
+      </p>
     </section>
 
-    <section>
-      <h2 class="text-3xl font-bold text-green-300 mb-4">Sustainable Transportation</h2>
-      <p class="text-lg text-gray-300">Bike-to-school programs, carpooling clubs, and walk days are promoted throughout the year.</p>
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-dark-green-300 mb-4">Bike Repair Workshop and Solidarity Rental</h2>
+      <p class="text-lg leading-relaxed mb-10 text-[#333333]">A bike repair workshop aims to give a second life to abandoned or unused bicycles while encouraging sustainable transportation. The concept involves collecting old bikes, repairing or upgrading them, and then offering them for rent or loan—especially to students, job seekers, or low-income individuals. The workshop can become a learning space where participants are trained in bike mechanics and maintenance. Volunteers or local mechanics can lead the sessions. The project can also include community bike rides, car-free days, and awareness campaigns on the environmental and health benefits of cycling. This is a project that combines social impact, environmental benefits, and practical skills development.
+      </p>
     </section>
+
+    <section class=" mb-16">
+      <h2 class="text-3xl font-bold text-dark-green-300 mb-4">Eco-Classroom Challenge (Zero Waste Classroom) </h2>
+      <p class="text-lg leading-relaxed mb-10 text-[#333333]">This project encourages each class to reduce its waste as much as possible over a certain period—like one week or one month. Students are involved in sorting waste, reducing plastic use, reusing materials, and composting food scraps. Teachers can include lessons about waste, pollution, and sustainable consumption in their subjects. You can set up a scoreboard to create friendly competition between classes, and reward the most eco-friendly one. It helps raise awareness of daily habits and shows that small changes can have a big impact.
+      </p>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-dark-green-300 mb-4"> School Pollinator Garden</h2>
+      <p class="text-lg leading-relaxed mb-10 text-[#333333]">Create a small garden with plants that attract bees, butterflies, and other pollinators. This helps biodiversity and offers a beautiful green space in the school. Students can be involved in planning, planting, and taking care of the garden. Signs can be added to explain the importance of pollinators and the role they play in food production. This project combines biology, environmental science, and art (with handmade signs and decorations).
+      </p>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-dark-green-300 mb-4">Upcycling Art & Design Project
+      </h2>
+      <p class="text-lg leading-relaxed mb-10 text-[#333333]">Instead of throwing away old materials, students collect and reuse them to create useful objects, furniture, or art pieces. This project encourages creativity and environmental responsibility. You can organize a school-wide upcycling competition or exhibition. Materials might include plastic bottles, cans, cardboard, old clothes, etc. It’s an ideal cross-disciplinary project that can involve both science and art classes.</p>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-dark-green-300 mb-4">Digital Detox & Awareness Campaign</h2>
+      <p class="text-lg leading-relaxed mb-10 text-[#333333]">Organize a one-day or one-week challenge where students reduce their screen time and focus on offline activities like reading, nature walks, or crafts. Pair this with awareness posters around the school about the environmental impact of digital pollution (data centers, device production, energy use). This encourages mindfulness, better mental health, and awareness of the hidden impact of technology on the environment.
+      </p>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-dark-green-300 mb-4">Green Ambassadors Program</h2>
+      <p class="text-lg leading-relaxed mb-10 text-[#333333]">Create a team of motivated students—“Green Ambassadors”—who lead sustainability efforts in the school. They can run campaigns, check if lights are turned off, monitor recycling bins, create posters, and organize eco-days. It gives students leadership roles while promoting environmental responsibility among their peers. Teachers can help by acting as coordinators.</p>
+    </section>
+
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-950 py-8">
+  <footer class="bg-[#026414] py-8 mt-10">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <div class="mb-4 space-x-4">
-        <a href="index.html" class="hover:text-green-400">Home</a>
-        <a href="about.html" class="hover:text-green-400">About</a>
-        <a href="initiatives.html" class="text-green-400 font-semibold">Initiatives</a>
-        <a href="get-involved.html" class="hover:text-green-400">Get Involved</a>
-        <a href="events.html" class="hover:text-green-400">Events</a>
+        <a href="index.html" class="hover:text-[#EBE5D5] text-white">Home</a>
+        <a href="about.html" class="hover:text-[#EBE5D5] text-white">About</a>
+        <a href="initiatives.html" class="hover:text-[#EBE5D5] text-white">Initiatives</a>
+        <a href="get-involved.html" class="hover:text-[#EBE5D5] text-white">Get Involved</a>
+        <a href="events.html" class="hover:text-[#EBE5D5] text-white">Events</a>
       </div>
-      <p class="text-sm text-gray-400">&copy; 2025 EcoSchool. All rights reserved.</p>
+      <p class="text-sm text-[#EBE5D5]">&copy; 2025 EcoSchool. All rights reserved.</p>
     </div>
   </footer>
 

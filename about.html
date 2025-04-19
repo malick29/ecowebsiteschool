@@ -1,100 +1,127 @@
-<!-- ABOUT PAGE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <title>About | EcoSchool Project</title>
+  <title>About Us | Greener Future Project</title>
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- TailwindCSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
   <style>
     body {
       font-family: 'Inter', sans-serif;
     }
+    /* Extra custom styles for extra polish */
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease-in-out;
+    }
+    .text-primary {
+      color: #036517;
+    }
+    .bg-primary {
+      background-color: #FFFFFF;
+    }
+    .bg-secondary {
+      background-color: #EBE5D5;
+    }
+    .text-secondary {
+      color: #026414;
+    }
+    .text-accent {
+      color: #EE7F9A;
+    }
+    .bg-dark {
+      background-color: #333333;
+    }
+    .text-light {
+      color: #D1D5DB;
+    }
   </style>
 </head>
-<body class="bg-gray-900 text-white">
+<body class="bg-secondary text-primary">
+
   <!-- Header -->
-  <header class="bg-gray-950 shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="text-2xl font-bold text-green-400">EcoSchool</div>
-      <nav class="hidden md:flex space-x-6">
-        <a href="index.html" class="hover:text-green-400">Home</a>
-        <a href="about.html" class="text-green-400 font-semibold">About</a>
-        <a href="initiatives.html" class="hover:text-green-400">Initiatives</a>
-        <a href="get-involved.html" class="hover:text-green-400">Get Involved</a>
-        <a href="events.html" class="hover:text-green-400">Events</a>
+  <header class="bg-primary shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="greenspark-logo.png" alt="Greenspark Logo" class="h-20 w-auto">
+      </a>
+      <nav class="space-x-6 text-secondary font-semibold hidden md:flex">
+        <a href="index.html" class="hover:text-accent transition">Home</a>
+        <a href="about.html" class="text-accent font-semibold">About</a>
+        <a href="initiatives.html" class="hover:text-accent transition">Initiatives</a>
+        <a href="get-involved.html" class="hover:text-accent transition">Get Involved</a>
+        <a href="events.html" class="hover:text-accent transition">Events</a>
       </nav>
       <button id="menuBtn" class="md:hidden">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
-    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2">
-      <a href="index.html" class="block hover:text-green-400">Home</a>
-      <a href="about.html" class="block text-green-400 font-semibold">About</a>
-      <a href="initiatives.html" class="block hover:text-green-400">Initiatives</a>
-      <a href="get-involved.html" class="block hover:text-green-400">Get Involved</a>
-      <a href="events.html" class="block hover:text-green-400">Events</a>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2 bg-primary shadow-md">
+      <a href="index.html" class="block hover:text-primary">Home</a>
+      <a href="about.html" class="block hover:text-primary">About</a>
+      <a href="initiatives.html" class="block hover:text-primary">Initiatives</a>
+      <a href="get-involved.html" class="block hover:text-primary">Get Involved</a>
+      <a href="events.html" class="block hover:text-primary">Events</a>
     </div>
   </header>
 
   <!-- About Content -->
   <main class="max-w-6xl mx-auto px-4 py-16">
     <section class="mb-12">
-      <h1 class="text-4xl font-bold text-green-400 mb-4">Our Mission</h1>
-      <p class="text-lg leading-relaxe"></p> <p>blblblb</p>
+      <h1 class="text-4xl font-bold text-accent mb-4">Our Mission</h1>
+      <p class="text-lg leading-relaxed mb-10 text-[#333333] ">
+        As a group of passionate high school students, our mission is to lead the way toward a greener future. We believe that real change starts with small actions, and through our eco project, we aim to raise awareness, inspire sustainable habits, and take concrete steps to protect our planet—right here at school. We’re not just dreaming of a better world—we’re building it, one initiative at a time.
+      </p>
     </section>
 
-    <section class="mb-12">
-      <h2 class="text-3xl font-bold text-green-300 mb-6">Blank</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-gray-800 p-5 rounded-xl">
-          <img src="assets/img/student1.jpg" class="w-24 h-24 mx-auto rounded-full mb-4" alt="">
-          <h3 class="text-xl font-semibold">.</h3>
-          <p class="text-sm text-gray-300">;;;;</p>
-        </div>
-        <div class="bg-gray-800 p-5 rounded-xl">
-          <img src="assets/img/student2.jpg" class="w-24 h-24 mx-auto rounded-full mb-4" alt="">
-          <h3 class="text-xl font-semibold">.</h3>
-          <p class="text-sm text-gray-300">...</p>
-        </div>
-        <div class="bg-gray-800 p-5 rounded-xl">
-          <img src="assets/img/teacher.jpg" class="w-24 h-24 mx-auto rounded-full mb-4" alt="">
-          <h3 class="text-xl font-semibold">.</h3>
-          <p class="text-sm text-gray-300">...</p>
-        </div>
-      </div>
-    </section>
 
     <section class="mb-12">
-      <h2 class="text-3xl font-bold text-green-300 mb-6">Our Goals</h2>
-      <ul class="list-disc list-inside text-lg text-gray-300">
-        <li>Short-Term: Cut school-wide plastic use by 50%</li>
-        <li>Mid-Term: Create self-sustaining green areas around the school</li>
-        <li>Long-Term: Inspire community-wide eco-awareness campaigns</li>
-      </ul>
+      <h2 class="text-3xl font-bold text-accent mb-6">Our Project</h2>
+      <p class="text-lg leading-relaxed mb-10 text-[#333333] ">
+        Our project is part of a larger vision: imagining a greener, more sustainable future for Morocco—starting with Casablanca.
+        <br><br>
+        <strong>Casablanca 2030</strong> is our contribution to this vision. Through a series of concrete actions and awareness campaigns, we aim to engage students, teachers, and the wider community in ecological responsibility. Whether it’s organizing clean-up events, promoting recycling habits, reducing plastic use, or leading workshops on climate issues, every step we take brings us closer to a more eco-friendly city.
+        <br><br>
+        Our main goal is to raise awareness—because real change begins with understanding. By focusing on education and collective action, we hope to inspire long-term habits that will help shape the Casablanca of tomorrow: cleaner, greener, and more conscious of its environmental impact.
+      </p>
     </section>
 
     <section>
-      <h2 class="text-3xl font-bold text-green-300 mb-6">How It Works</h2>
-      <p class="text-lg leading-relaxed text-gray-300"></p>
+      <h2 class="text-3xl font-bold text-accent mb-6">How It Works</h2>
+      <p class="text-lg leading-relaxed">
+        1. <strong>Identify</strong> key environmental challenges in our school and neighborhood.<br>
+        2. <strong>Brainstorm</strong> creative, actionable solutions as a team.<br>
+        3. <strong>Organize</strong> events and workshops to raise awareness and educate others.<br>
+        4. <strong>Implement</strong> sustainable practices like recycling, reducing plastic, and tree planting.<br>
+        5. <strong>Collaborate</strong> with other schools, local businesses, and environmental groups.<br>
+        6. <strong>Evaluate</strong> our impact regularly and improve based on feedback.
+      </p>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-950 py-8">
+  <footer class="bg-[#026414] py-8 mt-10">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <div class="mb-4 space-x-4">
-        <a href="index.html" class="hover:text-green-400">Home</a>
-        <a href="about.html" class="text-green-400 font-semibold">About</a>
-        <a href="initiatives.html" class="hover:text-green-400">Initiatives</a>
-        <a href="get-involved.html" class="hover:text-green-400">Get Involved</a>
-        <a href="events.html" class="hover:text-green-400">Events</a>
+        <a href="index.html" class="hover:text-[#EBE5D5] text-white">Home</a>
+        <a href="about.html" class="hover:text-[#EBE5D5] text-white">About</a>
+        <a href="initiatives.html" class="hover:text-[#EBE5D5] text-white">Initiatives</a>
+        <a href="get-involved.html" class="hover:text-[#EBE5D5] text-white">Get Involved</a>
+        <a href="events.html" class="hover:text-[#EBE5D5] text-white">Events</a>
       </div>
-      <p class="text-sm text-gray-400">&copy; 2025 EcoSchool. All rights reserved.</p>
+      <p class="text-sm text-[#EBE5D5]">&copy; 2025 EcoSchool. All rights reserved.</p>
     </div>
   </footer>
 
@@ -108,3 +135,6 @@
   </script>
 </body>
 </html>
+
+
+

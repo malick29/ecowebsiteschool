@@ -1,64 +1,84 @@
-<!-- GET INVOLVED PAGE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <title>Get Involved | EcoSchool Project</title>
+  <title>Greener Future Project</title>
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- TailwindCSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
   <style>
     body {
       font-family: 'Inter', sans-serif;
     }
+    /* Extra custom styles for extra polish */
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease-in-out;
+    }
   </style>
 </head>
-<body class="bg-gray-900 text-white">
+<body class="bg-[#EBE5D5] text-[#036517]">
+
   <!-- Header -->
-  <header class="bg-gray-950 shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="text-2xl font-bold text-green-400">EcoSchool</div>
-      <nav class="hidden md:flex space-x-6">
-        <a href="index.html" class="hover:text-green-400">Home</a>
-        <a href="about.html" class="hover:text-green-400">About</a>
-        <a href="initiatives.html" class="hover:text-green-400">Initiatives</a>
-        <a href="get-involved.html" class="text-green-400 font-semibold">Get Involved</a>
-        <a href="events.html" class="hover:text-green-400">Events</a>
+  <header class="bg-[#FFFFFF] shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="greenspark-logo.png" alt="Greenspark Logo" class="h-20 w-auto">
+      </a>
+      <nav class="space-x-6 text-[#026414] font-semibold hidden md:flex">
+        <a href="index.html" class="hover:text-[#EE7F9A] transition">Home</a>
+        <a href="about.html" class="hover:text-[#EE7F9A] transition">About</a>
+        <a href="initiatives.html" class="hover:text-[#EE7F9A] transition">Initiatives</a>
+        <a href="get-involved.html" class="hover:text-[#EE7F9A] transition">Get Involved</a>
+        <a href="events.html" class="hover:text-[#EE7F9A] transition">Events</a>
       </nav>
       <button id="menuBtn" class="md:hidden">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <svg class="w-6 h-6 text-[#036517]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
-    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2">
-      <a href="index.html" class="block hover:text-green-400">Home</a>
-      <a href="about.html" class="block hover:text-green-400">About</a>
-      <a href="initiatives.html" class="block hover:text-green-400">Initiatives</a>
-      <a href="get-involved.html" class="block text-green-400 font-semibold">Get Involved</a>
-      <a href="events.html" class="block hover:text-green-400">Events</a>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2 bg-[#FFFFFF] shadow-md">
+      <a href="index.html" class="block hover:text-[#036517]">Home</a>
+      <a href="about.html" class="block hover:text-[#036517]">About</a>
+      <a href="initiatives.html" class="block hover:text-[#036517]">Initiatives</a>
+      <a href="get-involved.html" class="block hover:text-[#036517]">Get Involved</a>
+      <a href="events.html" class="block hover:text-[#036517]">Events</a>
     </div>
   </header>
 
   <!-- Main Content -->
   <main class="max-w-6xl mx-auto px-4 py-16">
-    <h1 class="text-4xl font-bold text-green-400 mb-10">Get Involved</h1>
+    <h1 class="text-4xl font-bold text-accent mb-4">Get Involved</h1>
 
     <section class="mb-16">
       <h2 class="text-3xl font-bold text-green-300 mb-4">Join the Green Team</h2>
-      <p class="text-lg text-gray-300 mb-4">Become a part of our sustainability movement by volunteering in roles like:</p>
+      <p class="text-lg leading-relaxed mb-10 text-[#333333]"> Ready to make an impact? Want to be part of something that matters?
+        We’re looking for motivated, creative, and passionate students to join our eco team! Whether you’re into organizing events, creating content, gardening, recycling, or just want to help protect the planet—we need YOU. <br>
+       No experience needed—just a green heart and the will to act.
+        Together, we can turn ideas into action and make our school a model of sustainability. <br>
+       Let’s team up for a better tomorrow.
+        Join us today and be the change!</p>
       <ul class="list-disc ml-6 text-gray-400 mb-4">
         <li>Recycling Monitor</li>
         <li>Awareness Ambassador</li>
         <li>Event Organizer</li>
       </ul>
-      <form class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <label class="block mb-2 font-semibold text-white">Name</label>
+      <form class="bg-white p-5 rounded-xl shadow-md hover:shadow-lg transition card">
+        <label class="text-xl font-semibold mb-2 text-[#036517]">Name</label>
         <input type="text" placeholder="Your name" class="w-full p-2 mb-4 rounded bg-gray-700 text-white border border-gray-600" />
-        <label class="block mb-2 font-semibold text-white">Email</label>
+        <label class="text-xl font-semibold mb-2 text-[#036517]">Email</label>
         <input type="email" placeholder="you@example.com" class="w-full p-2 mb-4 rounded bg-gray-700 text-white border border-gray-600" />
-        <label class="block mb-2 font-semibold text-white">Interested Role</label>
+        <label class="text-xl font-semibold mb-2 text-[#036517]">Interested Role</label>
         <select class="w-full p-2 mb-4 rounded bg-gray-700 text-white border border-gray-600">
           <option>Recycling Monitor</option>
           <option>Awareness Ambassador</option>
@@ -70,26 +90,26 @@
 
     <section class="mb-16">
       <h2 class="text-3xl font-bold text-green-300 mb-4">Eco-Challenges & Competitions</h2>
-      <p class="text-lg text-gray-300">Participate in exciting initiatives like "Plastic-Free Week", eco-art contests, and green innovation competitions!</p>
+      <p class="text-lg leading-relaxed mb-10 text-[#333333]">Participate in exciting initiatives like "Plastic-Free Week", eco-art contests, and green innovation competitions!</p>
     </section>
 
     <section>
       <h2 class="text-3xl font-bold text-green-300 mb-4">Resources for Teachers & Parents</h2>
-      <p class="text-lg text-gray-300">We offer lesson plans and sustainability guides for classroom use and at-home eco practices.</p>
+      <p class="text-lg leading-relaxed mb-10 text-[#333333]">We offer lesson plans and sustainability guides for classroom use and at-home eco practices.</p>
     </section>
   </main>
-
+ 
   <!-- Footer -->
-  <footer class="bg-gray-950 py-8">
+  <footer class="bg-[#026414] py-8 mt-10">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <div class="mb-4 space-x-4">
-        <a href="index.html" class="hover:text-green-400">Home</a>
-        <a href="about.html" class="hover:text-green-400">About</a>
-        <a href="initiatives.html" class="hover:text-green-400">Initiatives</a>
-        <a href="get-involved.html" class="text-green-400 font-semibold">Get Involved</a>
-        <a href="events.html" class="hover:text-green-400">Events</a>
+        <a href="index.html" class="hover:text-[#EBE5D5] text-white">Home</a>
+        <a href="about.html" class="hover:text-[#EBE5D5] text-white">About</a>
+        <a href="initiatives.html" class="hover:text-[#EBE5D5] text-white">Initiatives</a>
+        <a href="get-involved.html" class="hover:text-[#EBE5D5] text-white">Get Involved</a>
+        <a href="events.html" class="hover:text-[#EBE5D5] text-white">Events</a>
       </div>
-      <p class="text-sm text-gray-400">&copy; 2025 EcoSchool. All rights reserved.</p>
+      <p class="text-sm text-[#EBE5D5]">&copy; 2025 EcoSchool. All rights reserved.</p>
     </div>
   </footer>
 
